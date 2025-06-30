@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: 1px 1px 5px;
+}
+
+.navigation {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    color: #5e72e4;
+    font-size: 47px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: inline;
+    padding: 0;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #f5576c;
+}
+
+.nav-menu li a:hover {
+    text-decoration: underline;
+    color: #5e72e4;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.hero-section {
+    background-color: #4facfe;
+    padding: 40px;
+    color: white;
+    margin-top: 88px;
+}
+
+.hero-section h2 {
+    font-size: 33px;
+    padding-bottom: 10px;
+}
+
+.hero-content {
+    margin: auto;
+    text-align: center;
+}
+
+.hero-content button {
+    background-color: white;
+    color: #4facfe;
+    margin-top: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-content button:hover {
+    color: #f5576c;
+}
+
+.hero-image {
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* features-section */
+.features-section,
+.courses-section {
+    background-color: #fdfeff;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+/* I put font-size of 32px and padding bottom to all h2 in .container class */
+.container h2 {
+    font-size: 33px;
+    padding-bottom: 10px;
+}
+
+.features-grid {
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.feature-title {
+    color: #f5576c;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.feature-description {
+    width: 290px;
+}
+
+/* Courses section */
+.courses-section {
+    background-color: #f093fb;
+}
+
+.courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.course-card {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.course-card:hover {
+    transform: scale(1.03);
+}
+
+.course-price {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: 1px solid #f5576c;
+}
+
+.course-description {
+    text-align: start;
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.course-duration {
+    color: #5e72e4;
+}
+
+.course-level {
+    color: #f5576c;
+}
+
+/* About Section */
+.about-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-style: 12px;
+}
+
+.testimonials-section .section-title,
+.courses-section h2 {
+    color: white;
+}
+
+.stats-container {
+    padding-top: 20px;
+}
+
+.stat-item span {
+    padding-top: 10px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+/* testimonial section */
+.testimonials-section {
+    background-color: #f093fb;
+}
+
+.testimonials-section .container {
+    justify-content: center;
+    text-align: center;
+    padding-block: 80px;
+}
+
+.testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.testimonial-content {
+    background-color: white;
+    width: 300px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.tesitimonial-card:hover {
+    transform: scale(1.03);
+}
+
+/* contact section */
+.contact-section .container {
+    margin: auto;
+    max-width: 900px;
+    justify-content: center;
+    align-items: center;
+    padding-block: 80px;
+    flex-wrap: wrap;
+    display: flex;
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+}
+
+.contact-details,
+.contact-icon {
+    margin-block: 25px;
+}
+
+.contact-content {
+    background-color: white;
+    width: 100%;
+    padding: 50px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-title {
+    color: #f5576c;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 390px;
+    height: 50px;
+    border-radius: 20px;
+    gap: 15px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    width: 360px;
+    height: 50px;
+    padding: 9px 9px 20px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 10px 10px 15px #c7c4c45d, inset -10px -10px 15px #ffffff;
+}
+
+form input:focus {
+    border: 2px solid #f5576c;
+}
+
+form .form-group textarea {
+    height: 120px;
+    max-width: 360px;
+    padding-top: 15px;
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 15px #c7c4c45d, inset -10px -10px 15px #ffffff;
+    border: none;
+    outline: none;
+}
+
+form .form-group textarea:focus {
+    border: 2px solid #f5576c;
+}
+
+form .submit-button {
+    border: none;
+    outline: none;
+    background: #f5576c;
+    padding: 9px;
+    padding-top: 5px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    max-width: 350px;
+    transition: background 0.3s ease-in-out;
+}
+
+form .submit-button:hover {
+    background-color: #4facfe;
+    cursor: pointer;
+}
+
+.contact-content {
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-details h3 {
+    text-align: start;
+}
+
+.contact-details p {
+    font-size: 12px;
+}
+
+.contact-details {
+    padding-bottom: 10px;
+}
+
+label {
+    text-align: left;
+    font-size: 20px;
+
+}
+
+/* footer */
+footer {
+    padding-bottom: 20px;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5e72e4;
+    color: white;
+    max-width: auto;
+    gap: .5rem;
+    height: auto;
+}
+
+.container .footer-content {
+    padding-block: 50px;
+    max-width: 90vw;
+    text-align: center;
+}
+
+.social-links a {
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.footer-content .footer-links li {
+    list-style: none;
+}
+
+.footer-content .footer-links li a {
+    text-decoration: none;
+}
+
+.footer-content div:first-child {
+    display: block;
+    width: 90vw;
+    border-bottom: 2px solid white;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-bottom: 75px;
+}
+
+.footer-content div:nth-last-child(-n+2) {
+    display: inline-block;
+    justify-content: space-between;
+    gap: 100px;
+    height: 50px;
+    font-size: 25px;
+}
+
+.footer-content div:nth-last-child(2) {
+    margin-right: 250px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section .social-links {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+.footer-section p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.footer-section a {
+    color: #fdfeff;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    font-size: 12px;
+}
