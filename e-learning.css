@@ -1,9 +1,11 @@
+/* I put font-size of 32px and padding bottom to all h2 in .container class */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Header Section */
 .main-header {
     position: fixed;
     top: 0;
@@ -48,6 +50,7 @@
     margin-right: 15px;
 }
 
+/* Hero Section */
 .hero-section {
     background-color: #4facfe;
     padding: 40px;
@@ -101,7 +104,6 @@
     padding-bottom: 90px;
 }
 
-/* I put font-size of 32px and padding bottom to all h2 in .container class */
 .container h2 {
     font-size: 33px;
     padding-bottom: 10px;
@@ -218,11 +220,20 @@
     padding-block: 80px;
 }
 
+/* .testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+} */
+
 .testimonials-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    /* Ensure cards center horizontally */
+    text-align: center;
 }
 
 .testimonial-content {
@@ -375,6 +386,7 @@ footer {
     max-width: auto;
     gap: .5rem;
     height: auto;
+    margin-top: auto;
 }
 
 .container .footer-content {
@@ -439,4 +451,122 @@ footer {
 
 .footer-bottom {
     font-size: 12px;
+}
+
+/* 2. Contact section fix – make sure it's tall enough and doesn’t collapse */
+.contact-section {
+    flex: 1;
+    padding-bottom: 120px;
+    /* Enough space between form and footer */
+}
+
+/* 6. Footer stays at the bottom */
+.main-footer {
+    background-color: #5e72e4;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Tablets: max-width 768px */
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .courses-grid,
+    .features-grid,
+    .testimonials-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card,
+    .testimonial-content {
+        width: 90%;
+    }
+
+    .testimonials-grid {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-content {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+    }
+    
+    .hero-content button {
+        padding: 10px 30px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    form input,
+    form .form-group textarea,
+    form .submit-button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-form {
+        min-width: 100%;
+    }
+
+    .logo h1 {
+        font-size: 36px;
+    }
+}
+
+/* Phones: max-width 480px */
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 28px;
+    }
+
+    .nav-menu li {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .hero-section {
+        padding: 30px 15px;
+        margin-top: 90px;
+    }
+
+    .hero-section h2 {
+        font-size: 26px;
+    }
+
+    .course-description,
+    .course-meta {
+        text-align: center;
+    }
+
+    .section-title,
+    label {
+        font-size: 16px;
+    }
+
+    .testimonials-section .container {
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .footer-content div:nth-last-child(-n+2) {
+        font-size: 18px;
+        gap: 20px;
+    }
+
+    .footer-content div:first-child {
+        font-size: 20px;
+    }
 }
