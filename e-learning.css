@@ -220,19 +220,11 @@
     padding-block: 80px;
 }
 
-/* .testimonials-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-} */
-
 .testimonials-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    /* Ensure cards center horizontally */
     text-align: center;
 }
 
@@ -252,6 +244,12 @@
 }
 
 /* contact section */
+.contact-section {
+    flex: 1;
+    padding-bottom: 120px;
+}
+
+
 .contact-section .container {
     margin: auto;
     max-width: 900px;
@@ -409,55 +407,46 @@ footer {
     text-decoration: none;
 }
 
-.footer-content div:first-child {
-    display: block;
-    width: 90vw;
-    border-bottom: 2px solid white;
-    font-size: 25px;
-    text-align: center;
-    padding-bottom: 50px;
-    margin-bottom: 75px;
-}
-
-.footer-content div:nth-last-child(-n+2) {
-    display: inline-block;
-    justify-content: space-between;
-    gap: 100px;
-    height: 50px;
-    font-size: 25px;
-}
-
-.footer-content div:nth-last-child(2) {
-    margin-right: 250px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-section .social-links {
-    display: flex;
-    flex-direction: column;
-    height: 50px;
-}
-
-.footer-section p {
-    font-style: italic;
-    font-size: 20px;
-}
-
 .footer-section a {
     color: #fdfeff;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .footer-bottom {
     font-size: 12px;
 }
 
-/* 2. Contact section fix – make sure it's tall enough and doesn’t collapse */
-.contact-section {
-    flex: 1;
-    padding-bottom: 120px;
-    /* Enough space between form and footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.main-footer h4 {
+    color: #fdfeff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-content>.footer-section:nth-child(2),
+.footer-content>.footer-section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* wrap “Quick Links” & “Follow Us” in a horizontal sub‑row */
+.footer-content>.footer-section:nth-child(2),
+.footer-content>.footer-section:nth-child(3) {
+    flex: 1 1 130px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /* 6. Footer stays at the bottom */
@@ -499,7 +488,7 @@ footer {
         max-width: 400px;
         margin-left: 0;
     }
-    
+
     .hero-content button {
         padding: 10px 30px;
     }
@@ -527,6 +516,10 @@ footer {
 
 /* Phones: max-width 480px */
 @media (max-width: 480px) {
+    .main-header {
+        position: static;
+    }
+
     .logo h1 {
         font-size: 28px;
     }
@@ -539,7 +532,7 @@ footer {
 
     .hero-section {
         padding: 30px 15px;
-        margin-top: 90px;
+        margin-top: 0;
     }
 
     .hero-section h2 {
@@ -558,7 +551,16 @@ footer {
 
     .testimonials-section .container {
         max-width: 100%;
-        padding: 0 16px;
+        padding: 10px 16px;
+    }
+
+    .footer-content-row {
+        gap: 16px;
+    }
+
+    .footer-links a,
+    .social-links a {
+        font-size: 0.75rem;
     }
 
     .footer-content div:nth-last-child(-n+2) {
